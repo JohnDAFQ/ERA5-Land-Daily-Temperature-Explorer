@@ -4,7 +4,9 @@
 
 need <- c("shiny","bslib","httr2","jsonlite","lubridate",
           "dplyr","ggplot2","scales","purrr","readr","tibble")
+
 to_install <- need[!need %in% rownames(installed.packages())]
+
 if (length(to_install)) install.packages(to_install, repos = "https://cloud.r-project.org")
 invisible(lapply(need, library, character.only = TRUE))
 
