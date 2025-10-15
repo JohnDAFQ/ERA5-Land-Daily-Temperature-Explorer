@@ -108,3 +108,14 @@ if (isTRUE(DO_GIT)) {
 }
 
 message("✅ Done.")
+
+
+
+#D) After you push the lockfile
+
+#On your other laptops and Shiny Server:
+  
+#  renv::activate()
+#renv::upgrade()   # optional
+#renv::restore()
+#shiny::runApp()
