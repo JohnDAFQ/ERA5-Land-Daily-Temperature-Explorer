@@ -2,8 +2,7 @@
 # Global: packages, helpers, data fetcher (shared by ui/server)
 # ============================================================
 
-need <- c("shiny","bslib","httr2","jsonlite","lubridate",
-          "dplyr","ggplot2","scales","purrr","readr","tibble")
+need <- c("shiny","bslib","dplyr", "ggplot2", "lubridate","scales","readr", "httr2")
 
 to_install <- need[!need %in% rownames(installed.packages())]
 
